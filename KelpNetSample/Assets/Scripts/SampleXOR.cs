@@ -49,8 +49,8 @@ public class SampleXOR : MonoBehaviour
         }
         Debug.Log("Test Finished");
 
-        ModelIO<Real>.Save(nn,"test.nn");
-        Function<Real> testnn = ModelIO<Real>.Load("test.nn");
+        ModelIO<Real>.Save(nn,"Assets/TrainedModel/samplexor.nn");
+        Function<Real> testnn = ModelIO<Real>.Load("Assets/TrainedModel/samplexor.nn");
 
         Debug.Log("ReloadTest Start");
         foreach(Real[] input in trainData)
